@@ -33,15 +33,15 @@ const TeamHub = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
-      <div className="bg-blue-600 py-10">
+      <div className="bg-purple-600 py-10">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
             <div>
               <h1 className="text-3xl md:text-4xl font-bold text-white mb-2">Team Hub</h1>
-              <p className="text-blue-100 mb-4 md:mb-0">Create or join teams and play with others</p>
+              <p className="text-purple-100 mb-4 md:mb-0">Create or join teams and play with others</p>
             </div>
             <Link to="/create-team">
-              <Button className="bg-white text-blue-600 hover:bg-blue-50">
+              <Button className="bg-white text-purple-600 hover:bg-purple-50">
                 <Plus size={16} className="mr-2" />
                 Create New Team
               </Button>
@@ -77,10 +77,10 @@ const TeamHub = () => {
                   {filteredTeams.map(team => (
                     <Card key={team.id} className="overflow-hidden border-0 shadow-md hover:shadow-lg transition-all">
                       <CardContent className="p-0">
-                        <div className="bg-gradient-to-r from-blue-600 to-blue-400 p-4">
-                          <Badge className="bg-white text-blue-600 mb-2">{team.sport}</Badge>
+                        <div className="bg-gradient-to-r from-purple-600 to-purple-400 p-4">
+                          <Badge className="bg-white text-purple-600 mb-2">{team.sport}</Badge>
                           <h3 className="text-xl font-bold text-white">{team.name}</h3>
-                          <div className="flex items-center text-blue-100 text-sm mt-1">
+                          <div className="flex items-center text-purple-100 text-sm mt-1">
                             <MapPin size={14} className="mr-1" />
                             <span>{team.city}</span>
                           </div>
@@ -142,10 +142,10 @@ const TeamHub = () => {
                   {userTeams.map(team => (
                     <Card key={team.id} className="overflow-hidden border-0 shadow-md hover:shadow-lg transition-all">
                       <CardContent className="p-0">
-                        <div className="bg-gradient-to-r from-blue-600 to-blue-400 p-4">
-                          <Badge className="bg-white text-blue-600 mb-2">{team.sport}</Badge>
+                        <div className="bg-gradient-to-r from-purple-600 to-purple-400 p-4">
+                          <Badge className="bg-white text-purple-600 mb-2">{team.sport}</Badge>
                           <h3 className="text-xl font-bold text-white">{team.name}</h3>
-                          <div className="flex items-center text-blue-100 text-sm mt-1">
+                          <div className="flex items-center text-purple-100 text-sm mt-1">
                             <MapPin size={14} className="mr-1" />
                             <span>{team.city}</span>
                           </div>

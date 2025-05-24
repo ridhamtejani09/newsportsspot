@@ -42,7 +42,7 @@ const FeaturedVenues = () => {
               <Button 
                 key={sport}
                 variant={activeSport === sport ? "default" : "outline"}
-                className={`rounded-full ${activeSport === sport ? 'bg-blue-600' : ''}`}
+                className={`rounded-full ${activeSport === sport ? 'bg-purple-600' : ''}`}
                 onClick={() => handleSportFilter(sport)}
               >
                 {sport}
@@ -54,7 +54,7 @@ const FeaturedVenues = () => {
               <Button 
                 key={city}
                 variant={activeCity === city ? "default" : "outline"}
-                className={`rounded-full ${activeCity === city ? 'bg-blue-600' : ''}`}
+                className={`rounded-full ${activeCity === city ? 'bg-purple-600' : ''}`}
                 onClick={() => handleCityFilter(city)}
               >
                 {city}
@@ -71,7 +71,7 @@ const FeaturedVenues = () => {
         
         <div className="mt-12 text-center">
           <Link to="/book-venue">
-            <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white shadow-md hover:shadow-lg transform transition-all duration-300 hover:scale-105">
+            <Button size="lg" className="bg-purple-600 hover:bg-purple-700 text-white shadow-md hover:shadow-lg transform transition-all duration-300 hover:scale-105">
               View All Venues
             </Button>
           </Link>

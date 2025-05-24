@@ -44,7 +44,7 @@ const BookVenue = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
-      <div className="bg-blue-600 py-10">
+      <div className="bg-purple-600 py-10">
         <div className="container mx-auto px-4">
           <h1 className="text-3xl md:text-4xl font-bold text-white mb-6">Find and Book Sports Venues</h1>
           <div className="relative">
@@ -60,7 +60,7 @@ const BookVenue = () => {
           <div className="flex items-center justify-between mt-4">
             <Button 
               variant="outline" 
-              className="bg-white text-blue-600"
+              className="bg-white text-purple-600"
               onClick={() => setShowFilters(!showFilters)}
             >
               <Filter size={18} className="mr-2" />
@@ -87,7 +87,7 @@ const BookVenue = () => {
                       key={sport}
                       variant={activeSport === sport ? "default" : "outline"}
                       size="sm"
-                      className={`rounded-full ${activeSport === sport ? 'bg-blue-600' : ''}`}
+                      className={`rounded-full ${activeSport === sport ? 'bg-purple-600' : ''}`}
                       onClick={() => handleSportFilter(sport)}
                     >
                       {sport}
@@ -104,7 +104,7 @@ const BookVenue = () => {
                       key={city}
                       variant={activeCity === city ? "default" : "outline"}
                       size="sm"
-                      className={`rounded-full ${activeCity === city ? 'bg-blue-600' : ''}`}
+                      className={`rounded-full ${activeCity === city ? 'bg-purple-600' : ''}`}
                       onClick={() => handleCityFilter(city)}
                     >
                       <MapPin size={14} className="mr-1" />

@@ -19,7 +19,7 @@ const VenueCard = ({ venue }: VenueCardProps) => {
             className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110"
           />
           <div className="absolute top-3 right-3">
-            <Badge variant="secondary" className="bg-white text-blue-600 font-medium">
+            <Badge variant="secondary" className="bg-white text-purple-600 font-medium">
               ₹{venue.price}/hr
             </Badge>
           </div>
@@ -33,7 +33,7 @@ const VenueCard = ({ venue }: VenueCardProps) => {
         </div>
         <CardContent className="p-4">
           <div className="flex items-center justify-between mb-2">
-            <Badge variant="outline" className="bg-blue-50 text-blue-700 border-blue-200">
+            <Badge variant="outline" className="bg-purple-50 text-purple-700 border-purple-200">
               {venue.sport}
             </Badge>
             <div className="flex items-center text-amber-500">

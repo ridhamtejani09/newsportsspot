@@ -12,6 +12,12 @@ import SignUp from '@/pages/SignUp';
 import BookingConfirmation from '@/pages/BookingConfirmation';
 import Payment from '@/pages/Payment';
 import Dashboard from '@/pages/admin/Dashboard';
+import Venues from '@/pages/admin/Venues';
+import Bookings from '@/pages/admin/Bookings';
+import Users from '@/pages/admin/Users';
+import Analytics from '@/pages/admin/Analytics';
+import AdminProfile from '@/pages/admin/AdminProfile';
+import AdminLayout from '@/pages/admin/AdminLayout';
 import { VenuesProvider } from '@/contexts/VenuesContext';
 import { BookingProvider } from '@/contexts/BookingContext';
 import { TeamsProvider } from '@/contexts/TeamsContext';
@@ -38,7 +44,15 @@ function App() {
                     <Route path="/signup" element={<SignUp />} />
                     <Route path="/booking-confirmation/:id" element={<BookingConfirmation />} />
                     <Route path="/payment/:id" element={<Payment />} />
-                    <Route path="/admin/*" element={<Dashboard />} />
+                    {/* Admin Panel Nested Routes */}
+                    <Route path="/admin" element={<AdminLayout />}>
+                      <Route index element={<Dashboard />} />
+                      <Route path="venues" element={<Venues />} />
+                      <Route path="bookings" element={<Bookings />} />
+                      <Route path="users" element={<Users />} />
+                      <Route path="analytics" element={<Analytics />} />
+                      <Route path="profile" element={<AdminProfile />} />
+                    </Route>
                   </Routes>
                 </Router>
                 <Toaster />
