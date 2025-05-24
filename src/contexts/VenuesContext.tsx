@@ -23,7 +23,7 @@ const mockVenues: Venue[] = [
   {
     id: '1',
     name: 'Classic Sports Arena',
-    sport: 'PickleBall, Box Cricket',
+    sport: 'Pickleball',
     city: 'Rajkot',
     price: 1500,
     address: 'Opp Iskon temple Kalawad Road',
@@ -39,7 +39,7 @@ const mockVenues: Venue[] = [
   {
     id: '2',
     name: 'Dug Out Sports Club',
-    sport: 'Pickleball, Cricket',
+    sport: 'Pickleball',
     city: 'Rajkot',
     price: 800,
     address: '456 Park Ave, Rajkot, Gujarat',
@@ -55,7 +55,7 @@ const mockVenues: Venue[] = [
   {
     id: '3',
     name: 'Infinity Sports Club',
-    sport: 'Volleyball , Cricket',
+    sport: 'Volleyball',
     city: 'Ahmedabad',
     price: 900,
     address: '789 Beach Rd, Ahmedabad, Gujarat',

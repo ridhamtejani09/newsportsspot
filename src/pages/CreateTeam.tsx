@@ -57,7 +57,17 @@ const CreateTeam = () => {
     setIsSubmitting(true);
 
     // Create the team
-    createTeam(teamName, sport, city, description);
+    createTeam({
+      name: teamName,
+      sport,
+      city,
+      description,
+      maxPlayers: 12, // default or you can add a field for this
+      skillLevel: 'Beginner', // default or add a field
+      practiceSchedule: '', // default or add a field
+      contactEmail: '', // default or add a field
+      logo: '', // default or add a field
+    });
 
     toast({
       title: "Team created successfully!",
@@ -151,7 +161,7 @@ const CreateTeam = () => {
                     
                     <Button 
                       type="submit" 
-                      className="w-full bg-blue-600 hover:bg-blue-700"
+                      className="w-full bg-purple-600 hover:bg-purple-700"
                       disabled={isSubmitting}
                     >
                       {isSubmitting ? 'Creating Team...' : 'Create Team'}
